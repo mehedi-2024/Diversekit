@@ -13,7 +13,7 @@ import { FaFigma } from "react-icons/fa";
 export default function Hero() {
 
     return (
-        <div className='min-h-[80vh] bg-purple-100 max-w-[1440px] mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden'>
+        <div className='h-fit bg-purple-100 max-w-[1440px] mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden'>
 
             <div className="h-16">
                 <Navbar />
