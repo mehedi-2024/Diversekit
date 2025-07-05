@@ -18,11 +18,11 @@ export default function page() {
                                 <Navbar />
                             </div>
 
-                            <img src="/image/ring.png" className='mx-auto mt-12 w-96' alt="" />
+                            <img src="/image/ring.png" className='mx-auto mt-6 sm:mt-12 w-96' alt="" />
 
                             <section className='flex flex-col items-center mt-10 pb-4 mb-16' >
                                 <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb-6 bg-purple-50'>Answer your question!</h4>
-                                <h1 className="md:text-6xl text-5xl w-[90%] md:w-[75%] xl:w-[60%] text-center text-indigo-950 font-semibold leading-16 tracking-tight">
+                                <h1 className="md:text-6xl text-5xl w-[90%] md:w-[75%] xl:w-[60%] text-center text-indigo-950 font-semibold md:leading-16 tracking-tight leading-12">
                                     We’re empowering <br />
                                     creators to build better
                                 </h1>
