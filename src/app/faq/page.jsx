@@ -100,9 +100,9 @@ export default function page() {
     }
 
     return (
-        <div className='max-w-[1440px] mx-auto rounded-t-3xl  bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_50%)]'>
+        <div className='max-w-[1440px] mx-auto rounded-t-3xl  bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)]'>
 
-            <div className='px-2 sm:px-5'>
+            <div className='px-6 sm:px-10'>
                 <section>
                     <div className='h-fit max-w-[1440px] mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden  px-5 lg:px-10'>
 
