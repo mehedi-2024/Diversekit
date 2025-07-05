@@ -29,7 +29,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 sm:gap-0 sm:grid-cols-3 md:grid-cols-4">
                 <ul className='flex flex-col gap-5 text-sm'>
                     <li className='mb-3 text-[16px] font-semibold'>Explore</li>
                     <li><Link href={''} >All Components</Link></li>

@@ -30,7 +30,7 @@ export default function Hero() {
                 </p>
 
                 {/* searchbar */}
-                <div className='w-[400px] mx-auto bg-white h-10 rounded-lg flex items-center gap-3 px-4 border-b border-purple-600/50 shadow-xl mt-6 hover:shadow-2xl focus-within:border-2 focus-within:border-purple-400'>
+                <div className='w-[345px] sm:w-[400px] mx-auto bg-white h-10 rounded-lg flex items-center gap-3 px-4 border-b border-purple-600/50 shadow-xl mt-6 hover:shadow-2xl focus-within:border-2 focus-within:border-purple-400'>
                     <FaMagnifyingGlass size={18} className='text-gray-700' />
                     <input type="text" className='bg-transparent outline-0 border-0 text-sm grow' name="" id="" placeholder='Search components (eg. Footer, Header)' />
                     <button className='p-2 rounded bg-purple-50 -m-2 hover:bg-purple-100 cursor-pointer active:scale-90'>

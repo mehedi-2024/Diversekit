@@ -16,7 +16,7 @@ export default function Home() {
     <div className="px-1">
       <Hero />
 
-      <section className='grid max-w-[1440px] px-10 md:px-20 grid-cols-2 mt-6 lg:grid-cols-4 gap-4 mx-auto'>
+      <section className='grid max-w-[1440px] px-4 md:px-20 grid-cols-2 mt-6 lg:grid-cols-4 gap-4 mx-auto'>
         <GlowingCard />
         <GlowingCard />
         <GlowingCard />
@@ -26,9 +26,9 @@ export default function Home() {
       <Divider />
 
       {/* latest components section  */}
-      <section className="max-w-[1440px] mx-auto px-10 md:px-16 -mt-6">
-        <div className="flex justify-between items-center mb-12">
-          <h2 className="text-3xl font-bold">Letest Copmonents</h2>
+      <section className="max-w-[1440px] mx-auto px-4 md:px-16 -mt-6">
+        <div className="flex justify-between items-center mb-8 md:mb-12">
+          <h2 className="text-lg sm:text-2xl font-bold">Letest Copmonents</h2>
           <button className="cursor-pointer py-1 px-3 border rounded-md border-gray-700/20 shadow-lg text-gray-600">Browse all</button>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 gap-y-12">
@@ -45,7 +45,7 @@ export default function Home() {
 
       <Divider />
 
-      <div className="max-w-[1440px] mx-auto px-10 md:px-16">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-16">
         <section>
           <BrowseWireframes />
         </section>
@@ -54,12 +54,12 @@ export default function Home() {
 
         {/* latest Wireframes section  */}
         <section className="max-w-[1440px] mx-auto -mt-6">
-          <div className="flex justify-between items-end mb-12">
+          <div className="flex justify-between items-center mb-12">
             <div>
-              <h2 className="text-3xl font-bold">Latest Wireframes</h2>
-              <p className="text-gray-500">Discover the perfect foundation for any project.</p>
+              <h2 className="text-lg sm:text-2xl font-bold">Latest Wireframes</h2>
+              <p className="text-gray-500 mr-2 sm:w-auto">Discover the perfect foundation for any project.</p>
             </div>
-            <button className="cursor-pointer py-1 px-3 border rounded-md border-gray-700/20 shadow-lg text-gray-600">Browse all</button>
+            <button className="cursor-pointer text-nowrap py-1 px-3 border rounded-md border-gray-700/20 shadow-lg text-gray-600">Browse all</button>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 gap-y-12">
             <WireframesCard />
@@ -79,7 +79,7 @@ export default function Home() {
         {/* Premium templates section  */}
         <section className="-mt-6">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold">Premium Templates</h2>
+            <h2 className="text-lg sm:text-2xl font-bold">Premium Templates</h2>
             <button className="cursor-pointer py-1 px-3 border rounded-md border-gray-700/20 shadow-lg text-gray-600">Browse all</button>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 gap-y-12">
@@ -102,8 +102,8 @@ export default function Home() {
         <section className="max-w-[1440px] mx-auto -mt-6">
           <div className="flex justify-between sm:items-end items-start mb-12">
             <div>
-              <h2 className="text-3xl font-bold">Flowbase Blog</h2>
-              <p className="text-gray-500 text-sm sm:text-md">Discover articles and tutorials to help you build better</p>
+              <h2 className="text-lg sm:text-2xl font-bold">Flowbase Blog</h2>
+              <p className="text-gray-500 mr-2 text-sm sm:text-md">Discover articles and tutorials to help you build better</p>
             </div>
             <button className="cursor-pointer text-sm sm:text-[16px] py-1 px-3 border rounded-md border-gray-700/20 shadow-lg text-gray-600 text-nowrap">Browse all</button>
           </div>

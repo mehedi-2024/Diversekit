@@ -6,7 +6,7 @@ export default function LatestComponentCard() {
         <div className='w-full'>
             <img src="/image/webpage.avif" className='rounded-xl' alt="" />
 
-            <div className='flex gap-6 mt-4 '>
+            <div className='flex gap-6 mt-4 items-baseline leading-4'>
                 <h5 className='text-[18px]'>Sana Pricing 05</h5>
                 <button className='cursor-pointer text-xs h-fit font-semibold text-purple-700 px-3 rounded-full bg-gradient-to-tr from-indigo-300 to-purple-100 from-30% shadow'>Pro</button>
             </div>

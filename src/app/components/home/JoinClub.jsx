@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function JoinClub() {
     return (
-        <div className='flex flex-col items-center justify-center gap-4 text-center text-indigo-950 min-h-96 bg-indigo-100 rounded-xl'>
+        <div className='flex flex-col items-center justify-center gap-4 text-center text-indigo-950 py-10 sm:py-16 bg-indigo-100 rounded-xl  px-3'>
             <h2 className='text-3xl font-semibold'>
                 Unlock the world's <br />
                 largest design library

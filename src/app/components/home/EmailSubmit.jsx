@@ -12,7 +12,7 @@ export default function EmailSubmit() {
                 No Spam. Only sweet content and updates of our products. <br />
                 Join 55,000+ other creators in our community
             </p>
-            <div className='flex gap-3 items-center'>
+            <div className='flex flex-col sm:flex-row gap-3 items-center'>
                 <input type="text" placeholder='Email address...' className='w-72 p-2 text-sm rounded-lg border border-gray-600/40 bg-white outline-0 focus:border-indigo-500 ' />
                 <button className='py-1 px-3 bg-indigo-500 text-white rounded-md border border-gray-600/20 shadow cursor-pointer hover:bg-indigo-400 active:scale-95'>Submit</button>
             </div>
