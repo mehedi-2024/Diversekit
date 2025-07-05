@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className='relative'>
 
             {/* for desktop */}
-            <nav className={`flex justify-between items-center absolute top-0 left-0 bg-purple-100 h-16 pt-3 px-5 lg:px-10 w-full z-20`}>
+            <nav className={`flex justify-between items-center absolute top-0 left-0 bg-purple-100 h-16 pt-3 w-full z-20`}>
                 {/* left side */}
                 <div>
                     {/* <Image src={logo} className='w-full h-full' alt='logo' /> */}
@@ -95,12 +95,16 @@ const Navbar = () => {
                 {/* right side */}
                 <div className='flex items-center gap-5'>
                     <div className='items-center gap-5 text-sm hidden sm:flex'>
-                        <button className='px-3 py-1 rounded  cursor-pointer hover:bg-gray-100'>Log in</button>
-                        <button className='px-3 py-1 rounded bg-white border border-purple-900/30 cursor-pointer'>Sign Up</button>
+                        <button className='px-4 py-2 rounded-lg  cursor-pointer hover:bg-gray-100'>Log in</button>
+                        <button className='px-4 py-2 rounded-lg bg-white border border-purple-900/20 hover:shadow-lg cursor-pointer'>Sign Up</button>
                     </div>
 
                     <div className='relative z-50'>
-                        <div onClick={() => setIsOpenMobileNav(!isOpenMobileNav)} className={`p-2 rounded border-purple-900/30 active:scale-90 duration-100 hover:shadow-gray-600 shadow  cursor-pointer lg:hidden ${isOpenMobileNav ? 'bg-purple-500 text-white' : 'bg-purple-50 text-gray-700  shadow-purple-300'}`}>
+                        <div onClick={() => {
+                            setIsOpenMobileNav(!isOpenMobileNav)
+                            setIsOpenProduct(false)
+                            setIsOpenResources(false)
+                        }} className={`p-2 rounded border-purple-900/30 active:scale-90 duration-100 hover:shadow-gray-600 shadow  cursor-pointer lg:hidden ${isOpenMobileNav ? 'bg-purple-500 text-white' : 'bg-purple-50 text-gray-700  shadow-purple-300'}`}>
                             <HiBars3CenterLeft size={20} />
                         </div>
                     </div>
@@ -140,7 +144,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <div className={`transition-all duration-300 ease-in-out text-sm  space-y-2 grid mx-4 ${isOpenProduct ? ' mt-6 pb-3 grid-rows-[1fr]' : 'grid-rows-[0fr] duration-300'}`}>
+                        <div className={`transition-all duration-300 ease-in-out text-sm  space-y-2 grid mx-4 ${isOpenProduct ? ' mt-6 pb-3 grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
                             <ul className='overflow-hidden'>
                                 <li className='flex items-center gap-3 p-2 rounded-lg  hover:bg-purple-200 cursor-pointer active:scale-[98%]'>
                                     <div><TiTick /></div>

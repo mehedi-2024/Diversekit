@@ -12,7 +12,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <div className='w-full bg-white px-10 md:px-16 pb-14 text-gray-600 mx-auto'>
+        <div className='w-full bg-white px-10 md:px-16 py-14 text-gray-600 mx-auto'>
 
             <div className='mb-14 flex flex-col gap-6 items-center md:flex-row'>
                 <h3 className='text-xl text-gray-800 font-semibold'>Diversekit</h3>
