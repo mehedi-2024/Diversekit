@@ -5,6 +5,11 @@ import Navbar from '../components/global/Navbar';
 import { IoIosArrowDown } from "react-icons/io";
 import EmailSubmit from '../components/home/EmailSubmit';
 import Footer from '../components/global/Footer';
+import H1 from '../components/reuseable/H1';
+import P from '../components/reuseable/P';
+import H4 from '../components/reuseable/H4';
+import H5 from '../components/reuseable/H5';
+import TagText from '../components/reuseable/TagText';
 
 
 
@@ -111,14 +116,14 @@ export default function page() {
                         </div>
 
                         <section className='flex flex-col items-center mt-10 pb-4 mb-16' >
-                            <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb-6 bg-purple-50'>Answer your question!</h4>
-                            <h1 className="md:text-6xl text-5xl w-[90%] md:w-[75%] xl:w-[60%] text-center text-indigo-950 font-semibold md:leading-16 tracking-tight leading-12">
+                            <TagText>Answer your question!</TagText>
+                            <H1>
                                 Frequently <br />
                                 Asked Questions
-                            </h1>
-                            <p className='text-center w-[80%] lg:w-[48%] mt-2'>
+                            </H1>
+                            <P className='text-center w-[80%] lg:w-[48%] mt-2'>
                                 Everything you need to know about the product and billing.
-                            </p>
+                            </P>
                         </section>
 
 
@@ -130,9 +135,9 @@ export default function page() {
                     {/* General  */}
                     <div>
                         {/* faq title  */}
-                        <h3 className="text-2xl text-gray-700 font-semibold mb-4">
-                            General
-                        </h3>
+                        <div className="pb-4">
+                            <H4>General</H4>
+                        </div>
 
                         {/* faq  */}
 
@@ -147,14 +152,14 @@ export default function page() {
                                                     manageOpeningFAQ(data.id)
                                                 }}
                                                 className='flex justify-between gap-3 py-4 items-center cursor-pointer font-semibold'
-                                            >{data.question}
+                                            ><H5>{data.question}</H5>
                                                 <span className={`duration-300 ${openId === data.id && 'rotate-180'}`}><IoIosArrowDown /></span>
                                             </div>
 
                                             {/* ans  */}
                                             <div className={`grid duration-300 ${openId === data.id ? 'grid-rows-[1fr] pb-4 mt-2' : 'grid-rows-[0fr]'}`}>
                                                 <div className={` overflow-hidden`}>
-                                                    {data.answer}
+                                                    <P>{data.answer}</P>
                                                 </div>
                                             </div>
                                         </div>
@@ -164,12 +169,12 @@ export default function page() {
                         </div>
                     </div>
 
-                    {/* components  */}
+                    {/* Components  */}
                     <div>
                         {/* faq title  */}
-                        <h3 className="text-2xl text-gray-700 font-semibold mb-4">
-                            Components
-                        </h3>
+                        <div className="pb-4">
+                            <H4>Components</H4>
+                        </div>
 
                         {/* faq  */}
 
@@ -184,14 +189,14 @@ export default function page() {
                                                     manageOpeningFAQ(data.id)
                                                 }}
                                                 className='flex justify-between gap-3 py-4 items-center cursor-pointer font-semibold'
-                                            >{data.question}
+                                            ><H5>{data.question}</H5>
                                                 <span className={`duration-300 ${openId === data.id && 'rotate-180'}`}><IoIosArrowDown /></span>
                                             </div>
 
                                             {/* ans  */}
                                             <div className={`grid duration-300 ${openId === data.id ? 'grid-rows-[1fr] pb-4 mt-2' : 'grid-rows-[0fr]'}`}>
                                                 <div className={` overflow-hidden`}>
-                                                    {data.answer}
+                                                    <P>{data.answer}</P>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,12 +206,12 @@ export default function page() {
                         </div>
                     </div>
 
-                    {/* billing  */}
+                    {/* Billing  */}
                     <div>
                         {/* faq title  */}
-                        <h3 className="text-2xl text-gray-700 font-semibold mb-4">
-                            Billing
-                        </h3>
+                        <div className="pb-4">
+                            <H4>Billing</H4>
+                        </div>
 
                         {/* faq  */}
 
@@ -221,14 +226,14 @@ export default function page() {
                                                     manageOpeningFAQ(data.id)
                                                 }}
                                                 className='flex justify-between gap-3 py-4 items-center cursor-pointer font-semibold'
-                                            >{data.question}
+                                            ><H5>{data.question}</H5>
                                                 <span className={`duration-300 ${openId === data.id && 'rotate-180'}`}><IoIosArrowDown /></span>
                                             </div>
 
                                             {/* ans  */}
                                             <div className={`grid duration-300 ${openId === data.id ? 'grid-rows-[1fr] pb-4 mt-2' : 'grid-rows-[0fr]'}`}>
                                                 <div className={` overflow-hidden`}>
-                                                    {data.answer}
+                                                    <P>{data.answer}</P>
                                                 </div>
                                             </div>
                                         </div>

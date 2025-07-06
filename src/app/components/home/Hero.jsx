@@ -7,6 +7,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { SiFramer } from "react-icons/si";
 import { FaWebflow } from "react-icons/fa6";
 import { FaFigma } from "react-icons/fa";
+import H1 from '../reuseable/H1';
+import P from '../reuseable/P';
 
 
 
@@ -21,13 +23,14 @@ export default function Hero() {
 
             <section className='flex flex-col items-center mt-10 pb-4' >
                 <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb-6 bg-purple-50'>Unlimited inspiration for creators</h4>
-                <h1 className="md:text-6xl text-5xl w-[90%] md:w-[75%] xl:w-[60%] text-center text-indigo-950 font-semibold leading-16 tracking-tight
-            ">
-                    The creators library of components & templates
-                </h1>
-                <p className='text-center w-[80%] lg:w-[48%]'>
-                    Flowbase is the world's largest premium library of Webflow, Figma & Framer components and tools. Build better, faster with Flowbase.
-                </p>
+                <H1>
+                    The creators library of <br /> components & templates
+                </H1>
+                <div className='text-center w-[80%] lg:w-[48%] mx-auto'>
+                    <P>
+                        Flowbase is the world's largest premium library of Webflow, Figma & Framer components and tools. Build better, faster with Flowbase.
+                    </P>
+                </div>
 
                 {/* searchbar */}
                 <div className='w-[345px] sm:w-[400px] mx-auto bg-white h-10 rounded-lg flex items-center gap-3 px-4 border-b border-purple-600/50 shadow-xl mt-6 hover:shadow-2xl focus-within:border-2 focus-within:border-purple-400'>
@@ -95,7 +98,7 @@ export default function Hero() {
                 </div>
             </section>
 
-            
+
         </div>
     )
 }

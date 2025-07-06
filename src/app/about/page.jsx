@@ -4,11 +4,13 @@ import NumberCard from '../components/about/NumberCard'
 import Footer from '../components/global/Footer'
 import EmailSubmit from '../components/home/EmailSubmit'
 import TeamMemberCard from '../components/about/TeamMemberCard'
+import TagText from '../components/reuseable/TagText'
+import H1 from '../components/reuseable/H1'
 
 export default function page() {
     return (
-        <div className=' px-2'>
-            <div className="bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)] rounded-t-3xl">
+        <div className=' px-2 pt-2'>
+            <div className="bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)] rounded-t-3xl px-2">
 
                 <section>
 
@@ -18,16 +20,16 @@ export default function page() {
 
                     <div className='h-fit max-w-[1440px] mx-auto mt-3 pb-3 relative overflow-hidden '>
 
-
-
                         <img src="/image/ring.png" className='mx-auto mt-6 sm:mt-12 w-96' alt="" />
 
                         <section className='flex flex-col items-center mt-10 pb-4 mb-16' >
-                            <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb-6 bg-purple-50'>Answer your question!</h4>
-                            <h1 className="md:text-6xl text-5xl md:w-[75%] xl:w-[60%] text-center text-indigo-950 font-semibold md:leading-16 tracking-tight leading-12">
-                                We’re empowering <br />
-                                creators to build better
-                            </h1>
+                            <TagText>Answer your question!</TagText>
+                            <div className="mt-2">
+                                <H1>
+                                    We’re empowering <br />
+                                    creators to build better
+                                </H1>
+                            </div>
                             <p className='text-center  lg:w-[48%] mt-2 px-2'>
                                 Our mission is to empower designers, developers and agencies with the tools they need to build their digital products more efficiently.
                             </p>
@@ -54,7 +56,7 @@ export default function page() {
                         {/* join the community */}
                         <section>
                             <div className='flex flex-col items-center gap-1 mt-24 mb-16 text-center'>
-                                <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb bg-purple-50 text-sm'>Community</h4>
+                                <TagText>Community</TagText>
 
                                 <h1 className="sm:text-5xl text-4xl w-[90%] md:w-[75%] xl:w-[60%] text-indigo-950 font-semibold md:leading-16 leading-10 tracking-tight -mb-1">
                                     Join the Community
@@ -139,6 +141,7 @@ export default function page() {
                 </div>
 
                 <Footer />
+
             </div>
 
         </div>

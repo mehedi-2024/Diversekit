@@ -1,4 +1,5 @@
 import React from 'react'
+import H5 from '../reuseable/H5'
 
 export default function GlowingCard() {
     return (
@@ -12,7 +13,7 @@ export default function GlowingCard() {
             {/* Content */}
             <div className='relative z-10 flex items-end h-full p-5'>
                 <div className='text-center mb-4'>
-                    <h3 className='text-xl '>Wireframes</h3>
+                    <H5>Wireframes</H5>
                     <p className='text-gray-500 text-sm'>Browse Chalk System</p>
                 </div>
             </div>

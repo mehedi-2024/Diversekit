@@ -7,6 +7,13 @@ import EmailSubmit from '../components/home/EmailSubmit';
 import Footer from '../components/global/Footer';
 import Link from 'next/link';
 import { FaArrowRightLong } from "react-icons/fa6";
+import TagText from '../components/reuseable/TagText';
+import H2 from '../components/reuseable/H2';
+import P from '../components/reuseable/P';
+import H5 from '../components/reuseable/H5';
+import SmP from '../components/reuseable/SmP';
+import H6 from '../components/reuseable/H6';
+import H4 from '../components/reuseable/H4';
 
 
 
@@ -117,37 +124,36 @@ export default function page() {
                         <div className='flex flex-col lg:flex-row lg:justify-between gap-16 lg:gap-0 max-w-[1040px] mx-auto py-[120px]'>
 
                             <section className='flex flex-col items-start md:justify-start mt-10 pb-4 lg:w-1/2' >
-                                <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb-6 bg-purple-50'>Contact Support Team</h4>
-                                <h1 className="md:text-6xl text-5xl text-indigo-950 font-semibold md:leading-16 tracking-tight leading-12">
+                                <TagText>Contact Support Team</TagText>
+                                <H2>
                                     Get in touch <br />
                                     how can we help
-                                </h1>
-                                <p className=' mt-2'>
+                                </H2>
+                                <P className=' mt-2'>
                                     Experiencing licensing, billing, or technical challenges? Interested in providing feedback? Seeking information about our pricing plan? Feel free to reach out to us.
-                                </p>
+                                </P>
 
                                 <div className='mt-10 flex flex-col sm:flex-row gap-8'>
                                     {/* 1 */}
                                     <div>
                                         <div className='w-12 h-12 rounded-lg shadow bg-white mb-3'></div>
-                                        <h3 className='text-xl font-[500]'>View Support Center</h3>
-                                        <p>
+                                        <H5>View Support Center</H5>
+                                        <SmP>
                                             View articles to common problems and questions.
-                                        </p>
-                                        <Link href={''} className='flex items-center gap-2 mt-3'>
-                                            Support Center <FaArrowRightLong />
+                                        </SmP>
+                                        <Link href={''} className='flex items-center gap-2 mt-2'>
+                                            <H6>Support Center</H6> <FaArrowRightLong />
                                         </Link>
                                     </div>
-
                                     {/* 2 */}
                                     <div>
                                         <div className='w-12 h-12 rounded-lg shadow bg-white mb-3'></div>
-                                        <h3 className='text-xl font-[500]'>View Support Center</h3>
-                                        <p>
+                                        <H5>View Support Center</H5>
+                                        <SmP>
                                             View articles to common problems and questions.
-                                        </p>
-                                        <Link href={''} className='flex items-center gap-2 mt-3'>
-                                            Support Center <FaArrowRightLong />
+                                        </SmP>
+                                        <Link href={''} className='flex items-center gap-2 mt-2'>
+                                            <H6>Support Center</H6> <FaArrowRightLong />
                                         </Link>
                                     </div>
                                 </div>
@@ -157,18 +163,18 @@ export default function page() {
                             <div className='shadow border border-gray-700/20 rounded-3xl p-8 bg-white flex flex-col gap-5 lg:w-1/2 h-fit mx-auto md:mt-16 w-full lg:max-w-[400px] text-sm'>
                                 {/* name  */}
                                 <label htmlFor="name">
-                                    <p>Name <span className="text-indigo-500">*</span></p>
+                                    <SmP>Name <span className="text-indigo-500">*</span></SmP>
                                     <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Name' />
                                 </label>
                                 {/* email  */}
                                 <label htmlFor="Email">
-                                    <p>Email <span className="text-indigo-500">*</span></p>
+                                    <SmP>Email <span className="text-indigo-500">*</span></SmP>
                                     <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Email address' />
                                 </label>
                                 {/* web url  */}
                                 <label htmlFor="web url">
                                     <div>
-                                        <p>Related URL (Optional)</p>
+                                        <SmP>Related URL (Optional)</SmP>
                                         <p className='text-sm text-gray-600'>Add a URL to help us troubleshoot.</p>
                                     </div>
                                     <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Website URL' />
@@ -176,7 +182,7 @@ export default function page() {
                                 {/* textarea  */}
                                 <label htmlFor="web url">
                                     <div>
-                                        <p>Problem Description</p>
+                                        <SmP>Problem Description</SmP>
                                         <p className='text-sm text-gray-600'>Please provide details and, if necessary.</p>
                                     </div>
                                     <textarea type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white h-24 resize-y' placeholder='Message & Description' />
@@ -185,8 +191,6 @@ export default function page() {
                                 <button className='w-full bg-indigo-600 hover:bg-indigo-500 cursor-pointer rounded-lg text-white text-center p-2'>Send Messege</button>
                             </div>
                         </div>
-
-
                     </div>
                 </section>
 
@@ -194,23 +198,27 @@ export default function page() {
                 <section className='max-w-[650px] mx-auto flex flex-col gap-16 py-12'>
                     {/* faq head  */}
                     <div className='text-center px-5 mb-16'>
-                        <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb-6 bg-purple-50 mx-auto'>FAQ</h4>
+                        <div className='w-fit mx-auto'>
+                            <TagText>FAQ</TagText>
+                        </div>
 
-                        <h1 className="md:text-5xl text-4xl text-indigo-950 font-semibold md:leading-16 tracking-tight leading-12">
+                        <H2>
                             Frequently <br />
                             Asked Questions
-                        </h1>
-                        <p className=' mt-2'>
-                            Everything you need to know about the product and billing.
-                        </p>
+                        </H2>
+                        <div className=' mt-2'>
+                            <P>
+                                Everything you need to know about the product and billing.
+                            </P>
+                        </div>
                     </div>
 
                     {/* General  */}
                     <div>
                         {/* faq title  */}
-                        <h3 className="text-2xl text-gray-700 font-semibold mb-4">
-                            General
-                        </h3>
+                        <div className="pb-4">
+                            <H4>General</H4>
+                        </div>
 
                         {/* faq  */}
 
@@ -225,14 +233,14 @@ export default function page() {
                                                     manageOpeningFAQ(data.id)
                                                 }}
                                                 className='flex justify-between gap-3 py-4 items-center cursor-pointer font-semibold'
-                                            >{data.question}
+                                            ><H5>{data.question}</H5>
                                                 <span className={`duration-300 ${openId === data.id && 'rotate-180'}`}><IoIosArrowDown /></span>
                                             </div>
 
                                             {/* ans  */}
                                             <div className={`grid duration-300 ${openId === data.id ? 'grid-rows-[1fr] pb-4 mt-2' : 'grid-rows-[0fr]'}`}>
                                                 <div className={` overflow-hidden`}>
-                                                    {data.answer}
+                                                    <P>{data.answer}</P>
                                                 </div>
                                             </div>
                                         </div>
@@ -242,12 +250,12 @@ export default function page() {
                         </div>
                     </div>
 
-                    {/* components  */}
+                    {/* Components  */}
                     <div>
                         {/* faq title  */}
-                        <h3 className="text-2xl text-gray-700 font-semibold mb-4">
-                            Components
-                        </h3>
+                        <div className="pb-4">
+                            <H4>Components</H4>
+                        </div>
 
                         {/* faq  */}
 
@@ -262,14 +270,14 @@ export default function page() {
                                                     manageOpeningFAQ(data.id)
                                                 }}
                                                 className='flex justify-between gap-3 py-4 items-center cursor-pointer font-semibold'
-                                            >{data.question}
+                                            ><H5>{data.question}</H5>
                                                 <span className={`duration-300 ${openId === data.id && 'rotate-180'}`}><IoIosArrowDown /></span>
                                             </div>
 
                                             {/* ans  */}
                                             <div className={`grid duration-300 ${openId === data.id ? 'grid-rows-[1fr] pb-4 mt-2' : 'grid-rows-[0fr]'}`}>
                                                 <div className={` overflow-hidden`}>
-                                                    {data.answer}
+                                                    <P>{data.answer}</P>
                                                 </div>
                                             </div>
                                         </div>
@@ -278,13 +286,13 @@ export default function page() {
                             }
                         </div>
                     </div>
-
-                    {/* billing  */}
+                    
+                    {/* Billing  */}
                     <div>
                         {/* faq title  */}
-                        <h3 className="text-2xl text-gray-700 font-semibold mb-4">
-                            Billing
-                        </h3>
+                        <div className="pb-4">
+                            <H4>Billing</H4>
+                        </div>
 
                         {/* faq  */}
 
@@ -299,14 +307,14 @@ export default function page() {
                                                     manageOpeningFAQ(data.id)
                                                 }}
                                                 className='flex justify-between gap-3 py-4 items-center cursor-pointer font-semibold'
-                                            >{data.question}
+                                            ><H5>{data.question}</H5>
                                                 <span className={`duration-300 ${openId === data.id && 'rotate-180'}`}><IoIosArrowDown /></span>
                                             </div>
 
                                             {/* ans  */}
                                             <div className={`grid duration-300 ${openId === data.id ? 'grid-rows-[1fr] pb-4 mt-2' : 'grid-rows-[0fr]'}`}>
                                                 <div className={` overflow-hidden`}>
-                                                    {data.answer}
+                                                    <P>{data.answer}</P>
                                                 </div>
                                             </div>
                                         </div>
