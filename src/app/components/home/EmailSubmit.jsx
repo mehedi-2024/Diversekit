@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function EmailSubmit() {
     return (
-        <div className='flex flex-col max-w-[700px] mx-auto items-center justify-center gap-4 text-center text-indigo-950 min-h-96 bg-indigo-100 rounded-xl'>
+        <div className='flex flex-col max-w-[700px] mx-auto items-center justify-center gap-4 text-center text-indigo-950 min-h-96 bg-indigo-100 rounded-xl p-4'>
             <p className='px-3 text-sm rounded-full border border-gray-600/30'>No-code content to your inbox</p>
             <h2 className='text-3xl font-semibold'>
-                Join our community and <br />
+                Join our community and <br className='hidden sm:inline' />
                 claim free products
             </h2>
             <p>
-                No Spam. Only sweet content and updates of our products. <br />
+                No Spam. Only sweet content and updates of our products. <br className='hidden sm:inline' />
                 Join 55,000+ other creators in our community
             </p>
             <div className='flex flex-col sm:flex-row gap-3 items-center'>
