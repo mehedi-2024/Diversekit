@@ -70,7 +70,7 @@ export default function page() {
       <div className="max-w-[800px] mx-auto px-8">
 
         {/* buttons  */}
-        <div className='flex gap-5 items-center mb-16'>
+        <div className='flex gap-5 items-center justify-center mb-16 text-nowrap flex-wrap'>
           <button className='py-[5px] px-[13px] rounded-full  border border-indigo-600/20 bg-indigo-50 cursor-pointer hover:shadow active:scale-95'><H6>All Topic</H6></button>
           <button className='py-[5px] px-[13px] rounded-full  border border-transparent cursor-pointer hover:shadow active:scale-95'><H6>Articles</H6></button>
           <button className='py-[5px] px-[13px] rounded-full  border border-transparent cursor-pointer hover:shadow active:scale-95'><H6>Resources</H6></button>
