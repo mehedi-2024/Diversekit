@@ -9,22 +9,25 @@ import { FaWebflow } from "react-icons/fa6";
 import { FaFigma } from "react-icons/fa";
 import H1 from '../reuseable/H1';
 import P from '../reuseable/P';
+import TagText from '../reuseable/TagText';
 
 
 
 export default function Hero() {
 
     return (
-        <div className='h-fit bg-purple-100 max-w-[1440px] mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden'>
+        <div className='h-fit bg-purple-100 mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden'>
 
             <div className="h-16  px-5 lg:px-10">
                 <Navbar />
             </div>
 
             <section className='flex flex-col items-center mt-10 pb-4' >
-                <h4 className='text-indigo-950 w-fit font-[500] px-2  rounded-full border border-gray-400/50 mb-6 bg-purple-50'>Unlimited inspiration for creators</h4>
+                <TagText>
+                    Unlimited inspiration for creators
+                </TagText>
                 <H1>
-                    The creators library of <br /> components & templates
+                    The creators library of <br className='hidden sm:inline' /> components & templates
                 </H1>
                 <div className='text-center w-[80%] lg:w-[48%] mx-auto'>
                     <P>

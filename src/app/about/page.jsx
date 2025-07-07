@@ -12,9 +12,8 @@ export default function page() {
         <div className=' px-2 pt-2'>
             <div className="bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)] rounded-t-3xl px-2">
 
-                <section>
-
-                    <div className="h-16 px-4 md:pl-8">
+                <section className='overflow-hidden'>
+                    <div className="h-16 px-4 md:pl-8 ">
                         <Navbar />
                     </div>
 

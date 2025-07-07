@@ -14,7 +14,7 @@ import Divider from "./components/small-components/Divider";
 
 export default function Home() {
   return (
-    <div className="px-1">
+    <div className="px-1 md:px-2">
       <Hero />
 
       <section className='grid max-w-[1440px] px-4 md:px-20 grid-cols-2 mt-6 lg:grid-cols-4 gap-4 mx-auto'>

@@ -105,18 +105,25 @@ export default function page() {
     }
 
     return (
-        <div className='max-w-[1440px] mx-auto rounded-t-3xl  bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)]'>
+        <div className='mx-1 md:mx-2 rounded-t-3xl  bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)]'>
 
-            <div className='px-6 sm:px-10'>
-                <section>
-                    <div className='h-fit max-w-[1440px] mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden  px-5 lg:px-10'>
+            <section>
+                <div className='h-fit  mt-3 rounded-3xl pb-3 overflow-hidden px-5 lg:px-10'>
 
-                        <div className="h-16">
-                            <Navbar />
+                    {/* nav  */}
+                    <div className="h-16">
+                        <Navbar />
+                    </div>
+
+                    {/* hero  */}
+                    <section className='flex flex-col items-center mt-10 pb-4 mb-16' >
+                        <div>
+                            <img src="/image/ring.png" alt="" />
                         </div>
-
-                        <section className='flex flex-col items-center mt-10 pb-4 mb-16' >
-                            <TagText>Answer your question!</TagText>
+                        <div>
+                            <div className='w-fit mx-auto'>
+                                <TagText>Answer your question!</TagText>
+                            </div>
                             <H1>
                                 Frequently <br />
                                 Asked Questions
@@ -124,11 +131,13 @@ export default function page() {
                             <P className='text-center w-[80%] lg:w-[48%] mt-2'>
                                 Everything you need to know about the product and billing.
                             </P>
-                        </section>
+                        </div>
+                    </section>
 
+                </div>
+            </section>
 
-                    </div>
-                </section>
+            <div className='px-6 sm:px-10 max-w-[1440px] mx-auto'>
 
                 {/* faq section */}
                 <section className='max-w-[650px] mx-auto flex flex-col gap-16'>

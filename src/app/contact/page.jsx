@@ -110,89 +110,91 @@ export default function page() {
     }
 
     return (
-        <div className='max-w-[1440px] mx-auto rounded-t-3xl  bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)]'>
+        <div className='mx-1 md:mx-2 rounded-t-3xl  bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)]'>
 
-            <div className='px-4 sm:px-10'>
-                <section>
-                    <div className='h-fit max-w-[1440px] mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden  px- lg:px-10'>
+            <section className='px-4 sm:px-10'>
+                <div className='h-fit mt-3 rounded-3xl pb-3 relative overflow-hidden  px- lg:px-10'>
 
-                        <div className="h-16">
-                            <Navbar />
-                        </div>
+                    {/* nav  */}
+                    <div className="h-16">
+                        <Navbar />
+                    </div>
 
-                        {/* hero  */}
-                        <div className='flex flex-col lg:flex-row lg:justify-between gap-16 lg:gap-0 max-w-[1040px] mx-auto py-[120px]'>
+                    {/* hero  */}
+                    <div className='flex flex-col lg:flex-row lg:justify-between gap-16 lg:gap-0 max-w-[1040px] mx-auto py-[120px]'>
 
-                            <section className='flex flex-col items-start md:justify-start mt-10 pb-4 lg:w-1/2' >
-                                <TagText>Contact Support Team</TagText>
-                                <H2>
-                                    Get in touch <br />
-                                    how can we help
-                                </H2>
-                                <P className=' mt-2'>
-                                    Experiencing licensing, billing, or technical challenges? Interested in providing feedback? Seeking information about our pricing plan? Feel free to reach out to us.
-                                </P>
+                        <section className='flex flex-col items-start md:justify-start mt-10 pb-4 lg:w-1/2' >
+                            <TagText>Contact Support Team</TagText>
+                            <H2>
+                                Get in touch <br />
+                                how can we help
+                            </H2>
+                            <P className=' mt-2'>
+                                Experiencing licensing, billing, or technical challenges? Interested in providing feedback? Seeking information about our pricing plan? Feel free to reach out to us.
+                            </P>
 
-                                <div className='mt-10 flex flex-col sm:flex-row gap-8'>
-                                    {/* 1 */}
-                                    <div>
-                                        <div className='w-12 h-12 rounded-lg shadow bg-white mb-3'></div>
-                                        <H5>View Support Center</H5>
-                                        <SmP>
-                                            View articles to common problems and questions.
-                                        </SmP>
-                                        <Link href={''} className='flex items-center gap-2 mt-2'>
-                                            <H6>Support Center</H6> <FaArrowRightLong />
-                                        </Link>
-                                    </div>
-                                    {/* 2 */}
-                                    <div>
-                                        <div className='w-12 h-12 rounded-lg shadow bg-white mb-3'></div>
-                                        <H5>View Support Center</H5>
-                                        <SmP>
-                                            View articles to common problems and questions.
-                                        </SmP>
-                                        <Link href={''} className='flex items-center gap-2 mt-2'>
-                                            <H6>Support Center</H6> <FaArrowRightLong />
-                                        </Link>
-                                    </div>
+                            <div className='mt-10 flex flex-col sm:flex-row gap-8'>
+                                {/* 1 */}
+                                <div>
+                                    <div className='w-12 h-12 rounded-lg shadow bg-white mb-3'></div>
+                                    <H5>View Support Center</H5>
+                                    <SmP>
+                                        View articles to common problems and questions.
+                                    </SmP>
+                                    <Link href={''} className='flex items-center gap-2 mt-2'>
+                                        <H6>Support Center</H6> <FaArrowRightLong />
+                                    </Link>
                                 </div>
-                            </section>
-
-                            {/* form  */}
-                            <div className='shadow border border-gray-700/20 rounded-3xl p-8 bg-white flex flex-col gap-5 lg:w-1/2 h-fit mx-auto md:mt-16 w-full lg:max-w-[400px] text-sm'>
-                                {/* name  */}
-                                <label htmlFor="name">
-                                    <SmP>Name <span className="text-indigo-500">*</span></SmP>
-                                    <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Name' />
-                                </label>
-                                {/* email  */}
-                                <label htmlFor="Email">
-                                    <SmP>Email <span className="text-indigo-500">*</span></SmP>
-                                    <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Email address' />
-                                </label>
-                                {/* web url  */}
-                                <label htmlFor="web url">
-                                    <div>
-                                        <SmP>Related URL (Optional)</SmP>
-                                        <p className='text-sm text-gray-600'>Add a URL to help us troubleshoot.</p>
-                                    </div>
-                                    <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Website URL' />
-                                </label>
-                                {/* textarea  */}
-                                <label htmlFor="web url">
-                                    <div>
-                                        <SmP>Problem Description</SmP>
-                                        <p className='text-sm text-gray-600'>Please provide details and, if necessary.</p>
-                                    </div>
-                                    <textarea type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white h-24 resize-y' placeholder='Message & Description' />
-                                </label>
-
-                                <button className='w-full bg-indigo-600 hover:bg-indigo-500 cursor-pointer rounded-lg text-white text-center p-2'>Send Messege</button>
+                                {/* 2 */}
+                                <div>
+                                    <div className='w-12 h-12 rounded-lg shadow bg-white mb-3'></div>
+                                    <H5>View Support Center</H5>
+                                    <SmP>
+                                        View articles to common problems and questions.
+                                    </SmP>
+                                    <Link href={''} className='flex items-center gap-2 mt-2'>
+                                        <H6>Support Center</H6> <FaArrowRightLong />
+                                    </Link>
+                                </div>
                             </div>
+                        </section>
+
+                        {/* form  */}
+                        <div className='shadow border border-gray-700/20 rounded-3xl p-8 bg-white flex flex-col gap-5 lg:w-1/2 h-fit mx-auto md:mt-16 w-full lg:max-w-[400px] text-sm'>
+                            {/* name  */}
+                            <label htmlFor="name">
+                                <SmP>Name <span className="text-indigo-500">*</span></SmP>
+                                <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Name' />
+                            </label>
+                            {/* email  */}
+                            <label htmlFor="Email">
+                                <SmP>Email <span className="text-indigo-500">*</span></SmP>
+                                <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Email address' />
+                            </label>
+                            {/* web url  */}
+                            <label htmlFor="web url">
+                                <div>
+                                    <SmP>Related URL (Optional)</SmP>
+                                    <p className='text-sm text-gray-600'>Add a URL to help us troubleshoot.</p>
+                                </div>
+                                <input type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white' placeholder='Website URL' />
+                            </label>
+                            {/* textarea  */}
+                            <label htmlFor="web url">
+                                <div>
+                                    <SmP>Problem Description</SmP>
+                                    <p className='text-sm text-gray-600'>Please provide details and, if necessary.</p>
+                                </div>
+                                <textarea type="text" className='py-[10px] px-3 text-sm rounded-lg shadow border border-gray-700/20 w-full mt-1 bg-white h-24 resize-y' placeholder='Message & Description' />
+                            </label>
+
+                            <button className='w-full bg-indigo-600 hover:bg-indigo-500 cursor-pointer rounded-lg text-white text-center p-2'>Send Messege</button>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+
+            <div className='px-4 sm:px-10 max-w-[1440px] mx-auto'>
 
                 {/* faq section */}
                 <section className='max-w-[650px] mx-auto flex flex-col gap-16 py-12'>
@@ -286,7 +288,7 @@ export default function page() {
                             }
                         </div>
                     </div>
-                    
+
                     {/* Billing  */}
                     <div>
                         {/* faq title  */}
