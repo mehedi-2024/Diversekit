@@ -39,19 +39,20 @@ export default function page() {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-center gap-10 px-8 lg:py-8 py-10 rounded-3xl bg-white shadow border border-gray-600/10  max-w-[800px]  mx-auto">
-              <div>
-                <img src="/image/flowbaseThumbnail1.png" className='rounded-3xl ' alt="" />
+            {/* card hero  */}
+            <div className="flex flex-col lg:flex-row lg:items-center gap-10 p-5 lg:pb-5 pb-10 rounded-2xl bg-white shadow border border-gray-600/10  max-w-[800px]  mx-auto">
+              <div className='lg:flex-1/2 h-full'>
+                <img src="/image/flowbaseThumbnail1.png" className='rounded-xl ' alt="" />
               </div>
 
-              <div className='flex flex-col gap-3'>
+              <div className='flex flex-col gap-3 lg:flex-1/2'>
                 <div className='flex items-center'>
                   <div className='py-[2px] px-2 rounded-full bg-indigo-200/30 text-xs'>
                     <p>Resources</p>
                   </div>
-                  <GrayText> . June 2, 2025</GrayText>
+                  <GraySm> . June 2, 2025</GraySm>
                 </div>
-                <H4>Introducing the Flowbase Icon Library</H4>
+                <h5 className='text-[24px] leading-[28px] font-medium'>Introducing the Flowbase Icon Library</h5>
                 <GraySm>
                   The ultimate icon resource for designers — all the best open-source icon libraries combined in one powerful, easy-to-use platform.
                 </GraySm>
@@ -70,7 +71,7 @@ export default function page() {
       <div className="max-w-[800px] mx-auto px-8">
 
         {/* buttons  */}
-        <div className='flex gap-5 items-center justify-center mb-16 text-nowrap flex-wrap'>
+        <div className='flex gap-5 items-center sm:justify-start justify-center mb-16 text-nowrap flex-wrap'>
           <button className='py-[5px] px-[13px] rounded-full  border border-indigo-600/20 bg-indigo-50 cursor-pointer hover:shadow active:scale-95'><H6>All Topic</H6></button>
           <button className='py-[5px] px-[13px] rounded-full  border border-transparent cursor-pointer hover:shadow active:scale-95'><H6>Articles</H6></button>
           <button className='py-[5px] px-[13px] rounded-full  border border-transparent cursor-pointer hover:shadow active:scale-95'><H6>Resources</H6></button>
@@ -78,7 +79,7 @@ export default function page() {
         </div>
 
         {/* cards  */}
-        <div className='grid lg:grid-cols-2 gap-8 mb-12'>
+        <div className='grid lg:grid-cols-2 gap-4 mb-12'>
           <FlowbaseBlogCard />
           <FlowbaseBlogCard />
           <FlowbaseBlogCard />

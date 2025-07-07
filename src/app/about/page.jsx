@@ -6,6 +6,7 @@ import EmailSubmit from '../components/home/EmailSubmit'
 import TeamMemberCard from '../components/about/TeamMemberCard'
 import TagText from '../components/reuseable/TagText'
 import H1 from '../components/reuseable/H1'
+import P from '../components/reuseable/P'
 
 export default function page() {
     return (
@@ -27,9 +28,11 @@ export default function page() {
                                     creators to build better
                                 </H1>
                             </div>
-                            <p className='text-center  lg:w-[48%] mt-2 px-2'>
-                                Our mission is to empower designers, developers and agencies with the tools they need to build their digital products more efficiently.
-                            </p>
+                            <div className="text-center">
+                                <P>
+                                    Our mission is to empower designers, developers and agencies with the tools they need to build their digital products more efficiently.
+                                </P>
+                            </div>
                             <button className='p-1 px-4 rounded-lg bg-indigo-500 text-white mt-4'>Explore our Components</button>
                         </section>
 

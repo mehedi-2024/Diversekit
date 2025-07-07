@@ -8,7 +8,7 @@ const inter = Inter({
 
 export default function GraySm({ children }) {
     return (
-        <p className={`text-[14px] leading-[24px] -tracking-[0.16px] text-gray-500 ${inter.className}`}>
+        <p className={`text-[14px] leading-[20px] -tracking-[0.14px] text-gray-500 ${inter.className}`}>
             {children}
         </p>
     )
