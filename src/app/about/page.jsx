@@ -9,13 +9,11 @@ import H1 from '../components/reuseable/H1'
 
 export default function page() {
     return (
-        <div className=' px-2 pt-2'>
-            <div className="bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)] rounded-t-3xl px-2">
+        <div className=' mx-1 md:mx-2 pt-2 mt-1 '>
+            <div className="bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)] rounded-t-3xl">
 
-                <section className='overflow-hidden'>
-                    <div className="h-16 px-4 md:pl-8 ">
-                        <Navbar />
-                    </div>
+                <section className='overflow-hidden px-4 lg:px-10'>
+                    <Navbar />
 
                     <div className='h-fit max-w-[1440px] mx-auto mt-3 pb-3 relative overflow-hidden '>
 

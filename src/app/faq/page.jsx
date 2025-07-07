@@ -111,9 +111,7 @@ export default function page() {
                 <div className='h-fit  mt-3 rounded-3xl pb-3 overflow-hidden px-5 lg:px-10'>
 
                     {/* nav  */}
-                    <div className="h-16">
-                        <Navbar />
-                    </div>
+                    <Navbar />
 
                     {/* hero  */}
                     <section className='flex flex-col items-center mt-10 pb-4 mb-16' >

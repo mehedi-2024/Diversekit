@@ -18,9 +18,7 @@ export default function Hero() {
     return (
         <div className='h-fit bg-purple-100 mx-auto mt-3 rounded-3xl pb-3 relative overflow-hidden'>
 
-            <div className="h-16  px-5 lg:px-10">
-                <Navbar />
-            </div>
+            <Navbar />
 
             <section className='flex flex-col items-center mt-10 pb-4' >
                 <TagText>

@@ -113,12 +113,10 @@ export default function page() {
         <div className='mx-1 md:mx-2 rounded-t-3xl  bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)]'>
 
             <section className='px-4 sm:px-10'>
-                <div className='h-fit mt-3 rounded-3xl pb-3 relative overflow-hidden  px- lg:px-10'>
+                <div className='h-fit mt-3 rounded-3xl pb-3 relative overflow-hidden'>
 
                     {/* nav  */}
-                    <div className="h-16">
                         <Navbar />
-                    </div>
 
                     {/* hero  */}
                     <div className='flex flex-col lg:flex-row lg:justify-between gap-16 lg:gap-0 max-w-[1040px] mx-auto py-[120px]'>

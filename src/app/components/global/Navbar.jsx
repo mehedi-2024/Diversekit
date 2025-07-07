@@ -14,10 +14,10 @@ const Navbar = () => {
     const [isOpenResources, setIsOpenResources] = useState(false)
     const [isOpenMobileNav, setIsOpenMobileNav] = useState(false)
     return (
-        <div className='relative'>
+        <div className='relative h-16'>
 
             {/* for desktop */}
-            <nav className={`flex justify-between items-center absolute top-0 left-0 bg-purple-100 h-16 pt-3 w-full z-20`}>
+            <nav className={`flex justify-between items-center absolute top-0 left-0 bg-purple-100 h-16 pt-3 w-full z-20  px-5 lg:px-10 rounded-3xl`}>
                 {/* left side */}
                 <div>
                     {/* <Image src={logo} className='w-full h-full' alt='logo' /> */}
