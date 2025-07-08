@@ -17,7 +17,7 @@ export default function Home() {
     <div className="px-1 md:px-2">
       <Hero />
 
-      <section className='grid max-w-[1440px] px-4 md:px-20 grid-cols-2 mt-6 lg:grid-cols-4 gap-4 mx-auto'>
+      <section className='grid max-w-[1440px] px-4 md:px-20 grid-cols-2 mt-6 lg:grid-cols-4 gap-5 mx-auto'>
         <GlowingCard />
         <GlowingCard />
         <GlowingCard />
@@ -32,7 +32,7 @@ export default function Home() {
           <H4>Letest Copmonents</H4>
           <button className="cursor-pointer py-1 px-3 border rounded-md border-gray-700/20 shadow-lg text-gray-600">Browse all</button>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 gap-y-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 gap-y-12">
           <LatestComponentCard />
           <LatestComponentCard />
           <LatestComponentCard />
@@ -64,7 +64,7 @@ export default function Home() {
             </div>
             <button className="cursor-pointer text-nowrap py-1 px-3 border rounded-md border-gray-700/20 shadow-lg text-gray-600">Browse all</button>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 gap-y-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 gap-y-12">
             <WireframesCard />
             <WireframesCard />
             <WireframesCard />

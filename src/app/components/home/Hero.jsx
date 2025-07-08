@@ -21,20 +21,22 @@ export default function Hero() {
             <Navbar />
 
             <section className='flex flex-col items-center mt-10 pb-4' >
-                <TagText>
-                    Unlimited inspiration for creators
-                </TagText>
+                <div className='mb-6'>
+                    <TagText>
+                        Unlimited inspiration for creators
+                    </TagText>
+                </div>
                 <H1>
                     The creators library of <br className='hidden sm:inline' /> components & templates
                 </H1>
-                <div className='text-center w-[80%] lg:w-[48%] mx-auto'>
+                <div className='text-center w-[80%] lg:w-[48%] mx-auto mt-2 mb-6'>
                     <P>
                         Flowbase is the world's largest premium library of Webflow, Figma & Framer components and tools. Build better, faster with Flowbase.
                     </P>
                 </div>
 
                 {/* searchbar */}
-                <div className='w-[345px] sm:w-[400px] mx-auto bg-white h-10 rounded-lg flex items-center gap-3 px-4 border-b border-purple-600/50 shadow-xl mt-6 hover:shadow-2xl focus-within:border-2 focus-within:border-purple-400'>
+                <div className='w-[345px] sm:w-[400px] mx-auto bg-white h-10 rounded-lg flex items-center gap-3 px-4 border-b border-purple-600/50 shadow-xl hover:shadow-2xl focus-within:border-2 focus-within:border-purple-400'>
                     <FaMagnifyingGlass size={18} className='text-gray-700' />
                     <input type="text" className='bg-transparent outline-0 border-0 text-sm grow' name="" id="" placeholder='Search components (eg. Footer, Header)' />
                     <button className='p-2 rounded bg-purple-50 -m-2 hover:bg-purple-100 cursor-pointer active:scale-90'>
@@ -43,7 +45,7 @@ export default function Hero() {
                 </div>
 
                 {/* web category */}
-                <div className='flex gap-4 text-sm mt-6 mb-8'>
+                <div className='flex gap-3 text-sm mt-6 mb-8'>
                     <div className='flex items-center gap-3 px-3 py-1 rounded-full bg-purple-50 border border-purple-300/70'>
                         <SiFramer />
                         <p className='font-semibold'>Framer</p>

@@ -13,6 +13,7 @@ export default function page() {
         <div className=' mx-1 md:mx-2 pt-2 mt-1 '>
             <div className="bg-[linear-gradient(to_bottom,_theme(colors.purple.100)_0%,_white_30%)] rounded-t-3xl">
 
+                {/* hero  */}
                 <section className='overflow-hidden px-4 lg:px-10'>
                     <Navbar />
 
@@ -20,9 +21,9 @@ export default function page() {
 
                         <img src="/image/ring.png" className='mx-auto mt-6 sm:mt-12 w-96' alt="" />
 
-                        <section className='flex flex-col items-center mt-10 pb-4 mb-16' >
+                        <div className='flex flex-col items-center mt-10 pb-4 mb-16' >
                             <TagText>Answer your question!</TagText>
-                            <div className="mt-2">
+                            <div className="mt-6 mb-2">
                                 <H1>
                                     We’re empowering <br />
                                     creators to build better
@@ -30,11 +31,11 @@ export default function page() {
                             </div>
                             <div className="text-center">
                                 <P>
-                                    Our mission is to empower designers, developers and agencies with the tools they need to build their digital products more efficiently.
+                                    Our mission is to empower designers, developers and agencies with <br className='hidden md:inline'/> the tools they need to build their digital products more efficiently.
                                 </P>
                             </div>
-                            <button className='p-1 px-4 rounded-lg bg-indigo-500 text-white mt-4'>Explore our Components</button>
-                        </section>
+                            <button className='p-1 px-4 mt-8 rounded-lg bg-indigo-500 text-white'>Explore our Components</button>
+                        </div>
 
 
                     </div>
