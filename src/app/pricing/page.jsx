@@ -6,14 +6,12 @@ import TagText from '../components/reuseable/TagText'
 import H1 from '../components/reuseable/H1'
 import P from '../components/reuseable/P'
 import PriceCard from '../components/pricing/PriceCardPaid'
-import Divider from '../components/small-components/Divider'
 import Footer from '../components/global/Footer'
 import FaqCompo from '../components/reuseable/component/FaqCompo'
 import EmailSubmit from '../components/home/EmailSubmit'
 import ButtonGradient from '../components/buttons/ButtonGradient'
 import H4 from '../components/reuseable/H4'
 import GraySm from '../components/reuseable/GraySm'
-import PriceCardPaid from '../components/pricing/PriceCardPaid'
 import PriceCardFree from '../components/pricing/PricingCandFree'
 
 export default function page() {
@@ -53,13 +51,15 @@ export default function page() {
                     {/* pricing */}
                     <section className='py-[26px] px-[22px] max-w-[820px] mx-auto bg-white rounded-[42px]'>
                         {/* button  */}
-                        <div className='w-[334px] h-[39px] bg-[#F3F4FA] rounded-full p-[1px] flex items-center justify-between mx-auto mb-6'>
+                        <div className='max-w-[334px] w-full h-[39px] bg-[#F3F4FA] rounded-full p-[1px] flex gap-2 items-center justify-between mx-auto mb-6'>
+                            {/* 1 */}
                             <button onClick={() => {
                                 if (isAnnually) {
                                     setIsAnnually(!isAnnually)
                                 }
-                            }} className={`w-[163px] h-full text-sm flex justify-center items-center hover:text-gray-800 text-gray-500 rounded-full font-medium cursor-pointer duration-100 ${!isAnnually && 'bg-white text-gray-800 shadow'}`}>Monthly</button>
+                            }} className={`w-1/2 h-full text-sm flex justify-center items-center hover:text-gray-800 text-gray-500 rounded-full font-medium cursor-pointer duration-100 ${!isAnnually && 'bg-white text-gray-800 shadow'}`}>Monthly</button>
 
+                            {/* 2 */}
                             <div onClick={() => {
                                 if (!isAnnually) {
                                     setIsAnnually(!isAnnually)
