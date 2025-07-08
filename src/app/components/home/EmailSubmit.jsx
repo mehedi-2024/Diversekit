@@ -1,9 +1,12 @@
 import React from 'react'
+import TagText from '../reuseable/TagText'
 
 export default function EmailSubmit() {
     return (
         <div className='flex flex-col max-w-[700px] mx-auto items-center justify-center gap-4 text-center text-indigo-950 min-h-96 bg-indigo-100 rounded-xl p-4'>
-            <p className='px-3 text-sm rounded-full border border-gray-600/30'>No-code content to your inbox</p>
+            <TagText>
+                No-code content to your inbox
+            </TagText>
             <h2 className='text-3xl font-semibold'>
                 Join our community and <br className='hidden sm:inline' />
                 claim free products

@@ -1,32 +1,29 @@
 import React from 'react'
 import H6 from '../reuseable/H6'
-import ButtonGradient from '../buttons/ButtonGradient'
 import SmP from '../reuseable/SmP'
 import GraySm from '../reuseable/GraySm'
-import ButtonSecondary from '../buttons/ButtonSecondary'
 import { FaRegCheckCircle } from "react-icons/fa";
+import ButtonPrimary from '../buttons/ButtonPrimary'
 
 
-export default function PriceCard() {
+export default function PriceCardFree() {
     return (
         <div className='max-w-[500px] w-full mx-auto bg-white px-1 py-1 rounded-2xl overflow-hidden shadow border border-gray-700/10'>
             <div className='px-6 py-7 flex flex-col'>
                 <div className='flex items-center gap-[6px] mb-3'>
-                    <H6>Pro+</H6>
-                    <ButtonGradient>Unlock All</ButtonGradient>
+                    <H6>Starter</H6>
                 </div>
 
                 <div className='text-[#36364A] flex items-end gap-2 mb-2'>
-                    <p className="text-4xl leading-[40px] font-medium">$39</p><H6>/month</H6>
-                </div>
+                    <h2 className="text-4xl leading-[40px] font-medium">Free</h2>                </div>
 
                 <div className="mb-4">
                     <GraySm>
-                        Boom! You're in the club, you can start copying components from the library in to any of your projects instantly.
+                        A free account grants you access to exclusive free content. Sign up and start copying from our free collection.
                     </GraySm>
                 </div>
 
-                <ButtonSecondary>Get started with Pro</ButtonSecondary>
+                <ButtonPrimary>Get started with Free</ButtonPrimary>
 
                 {/* bashed  */}
                 <p className='mt-6 mb-5 border-t border-dashed border-gray-300'></p>

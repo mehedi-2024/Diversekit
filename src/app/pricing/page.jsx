@@ -5,7 +5,7 @@ import Navbar from '../components/global/Navbar'
 import TagText from '../components/reuseable/TagText'
 import H1 from '../components/reuseable/H1'
 import P from '../components/reuseable/P'
-import PriceCard from '../components/pricing/PriceCard'
+import PriceCard from '../components/pricing/PriceCardPaid'
 import Divider from '../components/small-components/Divider'
 import Footer from '../components/global/Footer'
 import FaqCompo from '../components/reuseable/component/FaqCompo'
@@ -13,6 +13,8 @@ import EmailSubmit from '../components/home/EmailSubmit'
 import ButtonGradient from '../components/buttons/ButtonGradient'
 import H4 from '../components/reuseable/H4'
 import GraySm from '../components/reuseable/GraySm'
+import PriceCardPaid from '../components/pricing/PriceCardPaid'
+import PriceCardFree from '../components/pricing/PricingCandFree'
 
 export default function page() {
 
@@ -47,6 +49,7 @@ export default function page() {
                 </section>
 
                 <div className="px-6">
+
                     {/* pricing */}
                     <section className='py-[26px] px-[22px] max-w-[820px] mx-auto bg-white rounded-[42px]'>
                         {/* button  */}
@@ -66,7 +69,7 @@ export default function page() {
 
                         {/* card  */}
                         <div className="grid lg:grid-cols-2 gap-5">
-                            <PriceCard />
+                            <PriceCardFree />
                             <PriceCard />
                         </div>
 
@@ -150,7 +153,7 @@ export default function page() {
                         <FaqCompo />
                     </section>
 
-                    <section>
+                    <section className='py-20'>
                         <EmailSubmit />
                     </section>
                 </div>
